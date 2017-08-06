@@ -314,6 +314,40 @@ ul.foo li a:hover{
 	transition:all 0.2s ease 0s;
 }
 
+
+
+/*================================================
+ *  コンテント
+ ================================================*/
+
+#contents .item_title_content1{
+ 	width: 100%;
+ 	height: 330px;
+	display: flow-root;
+	margin-top: 30px;
+ }
+
+.item_title_content1 .item_title_content1_left{
+	float: left;
+	width: 150px;
+	margin-right: 20px;
+}
+
+.item_title_content1 .item_title_content1_right{
+	float: left;
+	width: 100px;
+}
+
+.item_title_content1_right img{
+	width: 200px;
+	height: 300px;
+}
+
+#contents .item1{
+}
+
+
+
 /*================================================
  *  ヘッダー
  ================================================*/

@@ -183,10 +183,20 @@ ul.foo li a:hover{
   color: #333;
 }
 
-/* シェアボタン */
-#shareButtonImage{
+.content_header{
 	width: 100%;
 	padding-top: 10px;
+	height: 40px;
+	display: flow-root;
+}
+
+/* シェアボタン */
+#shareButtonImage{
+	float: left;
+}
+
+.lang_select{
+	float: right;
 }
 
 #shareButtonImage img{
@@ -522,6 +532,7 @@ footer {
 
 
 
+
 	header nav.navbar #myNavbar{
 		background-color: rgba(0,0,0,1);
 	}
@@ -534,3 +545,23 @@ footer {
 		display: none;
 	}
 }
+
+/*================================================
+ *  言語切り替え
+ ================================================*/
+
+<style type="text/css">
+	body {
+		font-size: xx-large;
+		text-align: center;
+		margin-top: 100px;
+	}
+	.select-lang {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		padding-left: 10px;
+		color: #fff;
+		border: none;
+	}
+</style>

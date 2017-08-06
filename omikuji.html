@@ -8,6 +8,8 @@
 <meta name="description" content="">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+<link rel="stylesheet" href="./css/selectbox.css" />
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
 <script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
@@ -15,6 +17,9 @@
 <script type="text/javascript" src="js/jquery.slideshow.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min.js"></script>
+<script type="text/javascript" src="./js/select-language.js" charset="utf-8"></script>
 <script>
 $(function($){
 	$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 30, headerfix : $('nav')});
@@ -95,12 +100,28 @@ $(function($){
 		</ul>
 	</nav>
 
-	<div id="shareButtonImage">
-		<img src="./images/5050fb.png" />
-		<img src="./images/5050Tw.png" />
-		<img src="./images/5050You.jpg" />
-		<img src="./images/5050pinta.png" />
-		<img src="./images/5050_inst.png" />
+	<div class="content_header">
+		<div id="shareButtonImage">
+			<img src="./images/5050fb.png" />
+			<img src="./images/5050Tw.png" />
+			<img src="./images/5050You.jpg" />
+			<img src="./images/5050pinta.png" />
+			<img src="./images/5050_inst.png" />
+		</div>
+
+		<form name="select_form" class="lang_select">
+			<select name="select_lang" id="select_lang" class="select-lang styled-select blue rounded">
+				<option value="">
+					言語選択
+				</option>
+				<option value="ja">
+					日本語
+				</option>
+				<option value="en">
+					English
+				</option>
+			</select>
+		</form>
 	</div>
 
 	<div class="item_title_content1">

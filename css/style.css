@@ -518,6 +518,16 @@ footer {
 	margin-left: 52%;
 }
 
+/*================================================
+ *  特産品
+ ================================================*/
+
+.goods-main {
+	margin-top: 30px;
+}
+.goods-main img {
+	margin-top: 20px;
+}
 
 
 /*================================================
@@ -581,6 +591,11 @@ footer {
 	.access-content {
 		margin-left: 0%;
 	}
+
+	.goods-main {
+		margin-top: 50px;
+	}
+
 
 }
 

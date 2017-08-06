@@ -136,6 +136,14 @@ td {
 	border:1px solid #ddd;
 }
 
+/*画像の貼り付けサイズ*/
+.item_title_content1_image_mt img{
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+}
+
 /*================================================
  *  汎用クラス
  ================================================*/
@@ -640,4 +648,3 @@ footer {
 		border: none;
 	}
 </style>
-

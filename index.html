@@ -1,45 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <title></title>
-  <style type="text/css">
-    #modal-content {
-      font-size: xx-large;
-    }
-    .select-lang {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      padding-left: 10px;
-      color: #fff;
-      border: none;
-    }
-  </style>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="./selectbox.css" />
-
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min.js"></script>
-  <script type="text/javascript" src="./select-language.js" charset="utf-8"></script>
+<meta charset="utf-8">
+<title>フリーHTML5/CSS3ホームページテンプレート NO.005</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+<link rel="stylesheet" href="./css/selectbox.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.slideshow.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min.js"></script>
+<script type="text/javascript" src="./js/select-language.js" charset="utf-8"></script>
+<script>
+$(function($){
+	$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 30, headerfix : $('nav')});
+	$('.totop').scrollshow({position : 500});
+	$('.slide').slideshow({
+		touch        : false,
+		bgImage      : true,
+		autoSlide    : true,
+		effect       : 'fade',
+		repeat       : true,
+		easing       : 'swing',
+		interval     : 5000,
+		duration     : 1000,
+		imgHoverStop : false,
+		navHoverStop : false,
+		navImg       : false,
+		navImgCustom : false,
+		navImgSuffix : ''
+	});
+});
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
 </head>
 <body>
+<div id="wrapper">
+<header id="header1">
+	<div id="smartNavbar">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="goods-ja.html">HOME</a></li>
+					<li><a href="omikuji-ja.html">おみくじ</a></li>
+					<li><a href="goods-ja.html">特産品紹介</a></li>
+					<li><a href="omatsuri-ja.html">お祭り</a></li>
+					<li><a href="kankou-ja.html">観光地</a></li>
+					<li><a href="access-ja.html">アクセス</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+<header>
 
-  <form name="select_form">
-  <select name="select_lang" id="select_lang" class="select-lang styled-select blue rounded">
-    <option value="">
-        Language
-    </option>
-    <option value="ja">
-        日本語
-    </option>
-    <option value="en">
-        English
-    </option>
-  </select>
-  </form>
+	<div id="h1_wrapper">
+		<h1>TAKI THE WARLD</h1>
+	</div>
+	<div class="slide">
+		<ul class="slideInner">
+			<li><img src="images/top_image_1_00001.jpg" alt=""></li>
+			<li><img src="images/top_image_2_00001.jpg" alt=""></li>
+			<li><img src="images/top_image_3.JPG" alt=""></li>
+		</ul>
+	</div><!-- /.slide -->
 
-  <a href="#" onclick="Cookies.remove('lang')">言語リセット（テスト用）</a>
+</header>
+
+<div id="contents">
+
+	<nav>
+		<ul class = "foo">
+			<li><a href="goods-ja.html">HOME</a></li>
+			<li><a href="omikuji-ja.html">おみくじ</a></li>
+			<li><a href="goods-ja.html">特産品紹介</a></li>
+			<li><a href="omatsuri-ja.html">お祭り</a></li>
+			<li><a href="kankou-ja.html">観光地</a></li>
+			<li><a href="access-ja.html">アクセス</a></li>
+		</ul>
+	</nav>
+
+	<div class="content_header">
+		<div id="shareButtonImage">
+			<img src="./images/5050fb.png" />
+			<img src="./images/5050Tw.png" />
+			<img src="./images/5050You.jpg" />
+			<img src="./images/5050pinta.png" />
+			<img src="./images/5050_inst.png" />
+		</div>
+
+		<form name="select_form" class="lang_select">
+			<select name="select_lang" id="select_lang" class="select-lang styled-select blue rounded">
+				<option value="">
+					言語選択
+				</option>
+				<option value="ja">
+					日本語
+				</option>
+				<option value="en">
+					English
+				</option>
+			</select>
+		</form>
+	</div>
+
+	<div class="goods-main content">
+		<div class="row">
+			<div class="col-sm-4" style="text-align: center">
+				<img src="images/goods-suica.webp" alt="">
+			</div>
+			<div class="col-sm-8">
+				<h3>滝沢すいか</h3>
+				<p>
+県内一の出荷量を誇る滝沢産のすいか、通称「滝沢すいか」。<br>
+水はけの良い火山灰土の農地と、昼夜の大きな寒暖差が良質のすいかを育てます。<br>
+甘い果汁がたっぷりと濃縮され、シャキシャキした爽やかな食感が楽しめる夏のごちそう。<br>
+毎年夏が訪れると、沿道の直売所には、たくさんのすいかが並び、人々の目を引きます。<br>
+夏の風物詩として全国にファンを持つ特産品です。
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4" style="text-align: center">
+				<img src="images/goods-iwana.webp" alt="">
+			</div>
+			<div class="col-sm-8">
+				<h3>岩手山の伏流水で育った岩魚</h3>
+				<p>
+秀峰岩手山の麓では、豊富な湧き水を利用した岩魚の養殖が古くから行われてきました。<br>
+養魚場の澄み切った水の中で、卵から育てられた岩魚は、塩焼きはもちろんのこと、お刺身やお寿司などでもその美味しさを発揮します。
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4" style="text-align: center">
+				<img src="images/goods-apple.webp" alt="">
+			</div>
+			<div class="col-sm-8">
+				<h3>秋、沿道を彩るりんご達</h3>
+				<p>
+				滝沢の地にりんごが導入されたのは大正の頃。現在では80ha、約80戸の農家にまで生産が広がりました。<br>
+岩手山麓滝沢のりんごは、秋の深まりとともにおいしさをぐんぐん増して。<br>
+ふじ、王林、ジョナゴールド、さんさ、、北斗、千秋、陽光、世界一・・・何十種類ものりんご達が沿道の畑や直売所を彩ります。
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4" style="text-align: center">
+				<img src="images/goods-haruka.webp" alt="">
+			</div>
+			<div class="col-sm-8">
+				<h3>～黄金の濃蜜りんご～滝沢はるか</h3>
+				<p>
+				「はるか」は、平成14年に岩手大学農学部で生まれ、滝沢農場で育まれた新品種のりんご。<br>
+つるりとした淡いレモンイエローの肌。豊かな香りとパリッとした食感。実には蜜がたっぷりと入り、抜群の糖度を誇ります。<br>
+「はるか」の糖度は平均15度以上、中には20度を超えるものもあります（ふじは13度程度）。<br>
+岩手のりんご農家と研究者の長年の苦労がようやく実を結び、完成度の高い逸品となりました。
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4" style="text-align: center">
+				<img src="images/goods-potato.webp" alt="">
+			</div>
+			<div class="col-sm-8">
+				<h3>北国で栽培するさつま芋、クイックスイート</h3>
+				<p>
+				「クイックスイート」は、ベニアズマに九州30号を交配したさつま芋の品種。<br>
+クイックスイートの名前は、糖化の温度帯が広いため電子レンジなどを使った短時間の加熱料理が可能な甘い品種であるという特徴に由来しています。<br>
+一般的なさつま芋はホクホクの食感。ところがクイックスイートはねっとりしっとりした柔らかい食感です。<br>
+そして、際立つ甘さはまるでスイーツそのもの。
+				</p>
+			</div>
+		</div>
+	</div>
+
+</div><!-- /.contents -->
+
+<footer>
+	<div><small>Copyright &#169; 20XX - 20XX SITENAME All Rights Reserved.</small></div><!-- /.copyright -->
+</footer>
+
+<div class="totop">
+	<a href="#">
+		<img src="images/totop.png" alt="ページのトップへ戻る">
+	</a>
+</div><!-- /.totop -->
+</div>
 </body>
 </html>

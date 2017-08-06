@@ -497,6 +497,29 @@ footer {
 	height: 400px;
 }
 
+
+
+/*================================================
+ *  アクセス
+ ================================================*/
+
+.access-main {
+	display: flow-root;
+	margin-top: 30px;
+}
+.access-google-map {
+	width: 50%;
+}
+.access-google-map iframe {
+	width: 100%;
+}
+
+.access-content {
+	margin-left: 52%;
+}
+
+
+
 /*================================================
  *  タブレット向けデザイン
  ================================================*/
@@ -544,26 +567,21 @@ footer {
 	#contents nav{
 		display: none;
 	}
-}
 
+	.access-main {
+		margin-top: 50px;
+	}
+	.access-google-map {
+		width: 100%;
+	}
+	.access-google-map iframe {
+		width: 100%;
+	}
 
-/*================================================
- *  アクセス
- ================================================*/
+	.access-content {
+		margin-left: 0%;
+	}
 
-.access-main {
-	display: flow-root;
-	margin-top: 30px;
-}
-.access-google-map {
-	width: 50%;
-}
-.access-google-map iframe {
-	width: 100%;
-}
-
-.access-content {
-	margin-left: 52%;
 }
 
 

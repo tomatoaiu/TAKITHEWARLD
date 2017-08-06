@@ -53,5 +53,8 @@ $(function() {
     if (path != location.pathname) {
       location.pathname = path;
     }
+
+    // モーダルが開かれてたら閉じる
+    $('button[data-fancybox-close=""]').click();
   }
 });

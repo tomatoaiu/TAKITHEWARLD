@@ -537,6 +537,24 @@ footer {
 	margin-top: 20px;
 }
 
+/*================================================
+ *  岩手山
+ ================================================*/
+
+.item_title_content1{
+	width: 100%;
+}
+
+.item_title_content1_image_mt img{
+	width: 650px;
+	height: 300px;
+}
+
+.iwateyama{
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+}
 
 /*================================================
  *  タブレット向けデザイン

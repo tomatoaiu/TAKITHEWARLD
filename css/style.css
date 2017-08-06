@@ -530,7 +530,28 @@ footer {
 		width: 100%;
 	}
 
+	.content_header{
+		height: 90px;
+	}
 
+	#shareButtonImage{
+		width: 100%;
+		display: flow-root;
+	}
+
+	.lang_select{
+		padding-top: 10px;
+		float: left;
+	}
+
+	#contents .item_title_content1{
+		height: 360px;
+	}
+
+	.item_title_content1 .item_title_content1_left{
+		width: 100%;
+		margin-right: 0;
+	}
 
 
 	header nav.navbar #myNavbar{
